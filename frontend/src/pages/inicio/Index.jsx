@@ -48,8 +48,7 @@ export default function Inicio(){
             <img src={Jornal} className="frente" />
             <span className="bola1"></span>
         <span className="bola2"></span>
-        <span className="bola3"></span>
-            </div>
+        </div>
         </div>
         
         <div className="sobre">

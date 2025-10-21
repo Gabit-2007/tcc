@@ -50,7 +50,7 @@
         line-height: 0;
         padding: 0;
         margin: 0;
-        margin-top: -80px;
+        margin-top: -6%;
         overflow: hidden;
         z-index: 100;
         
@@ -142,11 +142,12 @@
     }
 
     .login{
+        position: relative;
         width: 100%;
         display: flex;
         flex-direction: row;
         margin: 0;
-        //overflow: hidden;
+        overflow: hidden;
         margin-bottom: 20px;
         height: 700px;
         justify-content: space-around;
@@ -188,6 +189,7 @@
             right: 0;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             .tras{
                 position: absolute;
                 width: 80%;
@@ -195,10 +197,10 @@
             }
             .frente{
                 position: relative;
-                width: 70%;
+                width: 50%;
                 z-index: 100;
-                margin-bottom: -1000px;
-                margin-left: -150px;
+                margin-bottom: -60%;
+                margin-left: -20%;
             }
             .bola1{
                 position: absolute;
@@ -207,29 +209,21 @@
             border-radius: 100%;
             background-color: #227C9D;
             z-index: 70;
-            margin-bottom: -100px;
-            margin-left: -200px;
+            margin-bottom: 70%;
+            margin-left: -10%;
             }
             .bola2{
                 position: absolute;
             height: 300px;
             width: 300px;
             border-radius: 100%;
-            background-color: #227C9D;
+            background-color: #447604;
             z-index: 70;
             bottom: 0;
-            margin-right: -300%;
+            margin-right: -200%;
             }
-            .bola3{
-                position: absolute;
-            height: 300px;
-            width: 300px;
-            border-radius: 100%;
-            background-color: #227C9D;
-            z-index: 70;
-            margin-bottom: -200px;
-            margin-right: -600px;
-            }
+            
+            
         }
     }
     .listra{
