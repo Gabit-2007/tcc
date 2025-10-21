@@ -1,0 +1,54 @@
+.rodape{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    img{
+            height: 200px;
+            padding: 0;
+        }
+
+    .contato{
+        padding-right: 20px;
+        h1{
+            font-size: 30px;
+            color: #227C9D;
+            margin: 0;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .redes{
+            display: flex;
+            flex-direction: row;
+
+            span{
+                background-color: black;
+                width: 4px;
+                border-radius: 12px;
+                height: 80px;
+                margin: 5px;
+            }
+
+            p{
+                margin-left: 10px;
+            }
+
+            img{
+            height: 70px;
+            padding: 5px;
+        }
+        }
+    }
+}

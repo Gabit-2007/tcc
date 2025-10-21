@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    
+    .inicio{
+        overflow-y: hidden;
+        width: 100%;
+        position: relative;
+
+    .azul{
+        background-image: linear-gradient(to bottom, #CAE6F0, #227C9D);
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .sla{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1{
+            color: #1A2B57;
+            font-size: 70px;
+            text-align: center;
+        }
+
+        p{
+            color: #1A2B57;
+            font-size: 40px;
+            margin: 30px;
+        }
+
+        img{
+            margin: 0;
+            padding: 0;
+            margin-right: -15px;
+            margin-bottom: -50px;
+            width: 70%;
+        }
+    }
+
+    .ondas{
+        width: 100vw;
+        display: grid;
+        flex-direction: column;
+        line-height: 0;
+        padding: 0;
+        margin: 0;
+        margin-top: -80px;
+        overflow: hidden;
+        z-index: 100;
+        
+        
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .inicio2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        position: relative;
+
+        .texto2{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        
+
+        h2{
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+            margin: 10px;
+        }
+
+        p{
+            font-size: 30px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        button{
+            background-color: #C44536;
+            color: #ffff;
+            width: 500px;
+            height: 68px;
+            border-radius: 12px;
+            border: 0;
+            font-size: 20px;
+            margin: 10px;
+        }
+        }
+
+        .predio{
+            position: relative;
+            height: 30%;
+            padding: 20px;
+            z-index: 100;
+        }
+
+        .bola1{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            border-radius: 100%;
+            background-color: #227C9D;
+            z-index: 70;
+            margin-left: -300px;
+            margin-bottom: -100px;
+            bottom: 0;
+        }
+
+        .bola2{
+            position: absolute;
+            height: 400px;
+            width: 600px;
+            border-radius: 100%;
+            background-color: #447604;
+            z-index: 70;
+            margin-left: -1300px;
+        }
+
+    }
+
+    .asfalto{
+        width: 100%;
+        margin: 0;
+    }
+
+    .login{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        //overflow: hidden;
+        margin-bottom: 20px;
+        height: 700px;
+        justify-content: space-around;
+        background-color: #CAE6F0;
+
+        .texto3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                color: #227C9D;
+                font-size: 60px;
+                font-weight: 500;
+            }
+
+            p{
+                font-size: 30px;
+                font-weight: 400;
+                padding: 30px;
+                text-align: center;
+            }
+
+            button{
+            background-color: #C44536;
+            color: #ffff;
+            width: 400px;
+            height: 68px;
+            border-radius: 12px;
+            border: 0;
+            font-size: 30px;
+            margin: 10px;
+            }
+        }
+
+        .imagem{
+            position: relative;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            .tras{
+                position: absolute;
+                width: 80%;
+                z-index: 99;
+            }
+            .frente{
+                position: relative;
+                width: 70%;
+                z-index: 100;
+                margin-bottom: -1000px;
+                margin-left: -150px;
+            }
+            .bola1{
+                position: absolute;
+            height: 300px;
+            width: 300px;
+            border-radius: 100%;
+            background-color: #227C9D;
+            z-index: 70;
+            margin-bottom: -100px;
+            margin-left: -200px;
+            }
+            .bola2{
+                position: absolute;
+            height: 300px;
+            width: 300px;
+            border-radius: 100%;
+            background-color: #227C9D;
+            z-index: 70;
+            bottom: 0;
+            margin-right: -300%;
+            }
+            .bola3{
+                position: absolute;
+            height: 300px;
+            width: 300px;
+            border-radius: 100%;
+            background-color: #227C9D;
+            z-index: 70;
+            margin-bottom: -200px;
+            margin-right: -600px;
+            }
+        }
+    }
+    .listra{
+        width: 100%;
+        height: 10px;
+        background-color: #227C9D;
+        margin: 5px;
+    }
+    .sobre{
+        height: fit-content;
+    }
+    }

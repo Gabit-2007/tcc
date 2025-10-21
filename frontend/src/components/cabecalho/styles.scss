@@ -1,0 +1,31 @@
+.cabecalho{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 10px;
+    background-color: white;
+    overflow: hidden;
+
+    img{
+        height: 80px;
+    }
+
+    .rotas{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin: 10px;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+
+        }
+    }
+}
