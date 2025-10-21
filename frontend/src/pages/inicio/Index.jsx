@@ -4,7 +4,6 @@ import Rodape from "../../components/rodape/Index";
 import Masp from "../../assets/masp.png";
 import Onda from "../../assets/ondas.png";
 import Predio from "../../assets/predio.png";
-import Canto from "../../assets/canto.png";
 import Asfalto from "../../assets/asfalto.png";
 import Luz from "../../assets/luz.png";
 import Jornal from "../../assets/jornal.png";
@@ -50,13 +49,18 @@ export default function Inicio(){
         <span className="bola2"></span>
         </div>
         </div>
-        
+        <div className="listras">
+        </div>
         <div className="sobre">
             <img src={SP} />
+            <div className="texto3">
             <h1>Saiba mais sobre nós</h1>
             <p>gostou da nossa ação? <br />
             clique em saiba mais e conheça nossa história! </p>
+            <span className="bola1"></span>
+            <span className="bola2"></span>
             <Link to={"/sobre"}><button>saiba mais</button></Link>
+            </div>
         </div>
         <Rodape/>
     </div>

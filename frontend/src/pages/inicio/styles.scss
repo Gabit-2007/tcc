@@ -6,7 +6,7 @@
 }
     
     .inicio{
-        overflow-y: hidden;
+        overflow-x: hidden;
         width: 100%;
         position: relative;
 
@@ -70,6 +70,7 @@
         padding: 0px;
         overflow: hidden;
         position: relative;
+        box-sizing: border-box;
 
         .texto2{
             display: flex;
@@ -102,6 +103,7 @@
             border: 0;
             font-size: 20px;
             margin: 10px;
+            cursor: pointer;
         }
         }
 
@@ -139,6 +141,7 @@
     .asfalto{
         width: 100%;
         margin: 0;
+        z-index: 100;
     }
 
     .login{
@@ -148,10 +151,12 @@
         flex-direction: row;
         margin: 0;
         overflow: hidden;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         height: 700px;
+        margin-top: -5px;
         justify-content: space-around;
         background-color: #CAE6F0;
+        z-index: 99;
 
         .texto3{
             display: flex;
@@ -181,6 +186,7 @@
             border: 0;
             font-size: 30px;
             margin: 10px;
+            cursor: pointer;
             }
         }
 
@@ -226,13 +232,76 @@
             
         }
     }
-    .listra{
+    .listras{
+        position: absolute;
         width: 100%;
-        height: 10px;
+        height: 60px;
         background-color: #227C9D;
-        margin: 5px;
     }
     .sobre{
-        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        background-color: #CDE5A5;
+        padding: 60px;
+        overflow: hidden;
+        margin-top: 60px;
+
+        img{
+            height: 500px;
+            z-index: 100;
+            
+        }
+
+        .texto3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        h1{
+            color: #447604;
+            font-size: 40px;
+        }
+
+        p{
+            font-weight: 500;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        button{
+            background-color: #C44536;
+            color: #ffff;
+            width: 400px;
+            height: 68px;
+            border-radius: 12px;
+            border: 0;
+            font-size: 30px;
+            margin: 10px;
+            cursor: pointer;
+            }
+        
+        .bola1{
+            position: absolute;
+            width: 550px;
+            height: 550px;
+            background-color: #447604;
+            border-radius: 100%;
+            z-index: 99;
+            margin-left: -1150px;
+        }
+        .bola2{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #D95D39;
+            border-radius: 100%;
+            z-index: 101;
+            margin-left: -1500px;
+            margin-top: -400px;
+        }
     }
     }
