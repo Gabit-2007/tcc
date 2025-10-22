@@ -163,6 +163,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin: 10px;
+            padding: 50px;
 
             h1{
                 color: #227C9D;
@@ -196,13 +198,17 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            height: 700px;
+            width: 800px;
             .tras{
                 position: absolute;
-                width: 80%;
+                height: 80%;
                 z-index: 99;
+                margin-right: 20px;
             }
             .frente{
                 position: relative;
+                height: 40%;
                 width: 50%;
                 z-index: 100;
                 margin-bottom: -60%;
@@ -210,23 +216,34 @@
             }
             .bola1{
                 position: absolute;
-            height: 300px;
-            width: 300px;
+            height: 400px;
+            width: 400px;
             border-radius: 100%;
             background-color: #227C9D;
             z-index: 70;
-            margin-bottom: 70%;
-            margin-left: -10%;
+            margin-bottom: -80%;
+            margin-left: 50%;
             }
             .bola2{
                 position: absolute;
-            height: 300px;
-            width: 300px;
+            height: 350px;
+            width: 350px;
             border-radius: 100%;
             background-color: #447604;
             z-index: 70;
             bottom: 0;
-            margin-right: -200%;
+            margin-left: -20%;
+            margin-bottom: 2%;
+            }
+            .bola3{
+                position: absolute;
+            height: 350px;
+            width: 350px;
+            border-radius: 100%;
+            background-color: #FFBF00;
+            z-index: 70;
+            margin-bottom: 90%;
+            margin-left: -10%;
             }
             
             
@@ -291,7 +308,7 @@
             background-color: #447604;
             border-radius: 100%;
             z-index: 99;
-            margin-left: -1150px;
+            margin-left: -1300px;
         }
         .bola2{
             position: absolute;

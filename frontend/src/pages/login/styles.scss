@@ -10,18 +10,60 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     margin: 0;
+    margin-top: 20px;
     padding: 20px;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 
-    .imagens{
-        
-        z-index: 100;
-        img{
-            
+    
+        .imagem{
             z-index: 100;
+            width: 35%;
+            position: relative;
+            margin-left: -35%;
+            margin-bottom: -5%;
+            bottom: 0;
         }
-    }
+
+        .bola1{
+            position: absolute;
+            width: 30%;
+            height: 60%;
+            background-color: #C44536;
+            border-radius: 100%;
+            z-index: 98;
+            margin-left: -100%;
+            margin-top: -10%;
+            
+        }
+
+        .bola2{
+            position: absolute;
+            width: 9%;
+            height: 20%;
+            background-color: #447604;
+            border-radius: 100%;
+            z-index: 98;
+            margin-left: -50%;
+            margin-top: -35%;
+            
+        }
+
+        .bola3{
+            position: absolute;
+            width: 20%;
+            height: 45%;
+            background-color: #FFBF00;
+            border-radius: 100%;
+            z-index: 98;
+            margin-left: -60%;
+            margin-top: 35%;
+            
+        }
 
     .textos{
         display: flex;
@@ -29,14 +71,62 @@
         justify-content: center;
         align-items: center;
         background-color: #CAE6F0;
-        width: 600px;
-        height: 600px;
-        z-index: 99;
+        width: 50%;
+        height: 90%;
+        z-index: 100;
+        position: absolute;
         border-radius: 12px;
+        right: 0;
+        margin-right: 10px;
 
         h1{
-            font-size: 40px;
+            font-size: 60px;
             color: #227C9D;
+        }
+
+        .input{
+            display: flex;
+            flex-direction: column;
+        
+
+        label{
+            font-size: 25px;
+            color: #227C9D;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        input{
+            width: 500px;
+            height: 50px;
+            border-radius: 12px;
+            border: none;
+        }
+        }
+
+        button{
+            background-color: #C44536;
+            color: #ffffff;
+            width: 200px;
+            height: 60px;
+            margin-top: 10%;
+            border-radius: 12px;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        p{
+            font-size: 20px;
+            color: black;
+            font-weight: 500;
+        }
+
+        a{
+            text-decoration: none;
+            color: #227C9D;
+            font-size: 20px;
+            font-weight: 500;
         }
     }
 

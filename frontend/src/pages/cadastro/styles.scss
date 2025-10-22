@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cadastro{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    
+        .imagem{
+            z-index: 100;
+            width: 60%;
+            position: relative;
+            margin-left: -50%;
+            margin-bottom: -5%;
+            bottom: 0;
+        }
+
+        .bola1{
+            position: absolute;
+            width: 14%;
+            height: 20%;
+            background-color: #D95D39;
+            border-radius: 100%;
+            z-index: 98;
+            margin-left: -80%;
+            margin-top: -29%;
+            
+        }
+
+        .bola2{
+            position: absolute;
+            width: 9%;
+            height: 15%;
+            background-color: #C44536;
+            border-radius: 100%;
+            z-index: 98;
+            margin-left: -50%;
+            margin-top: -50%;
+            
+        }
+
+        .bola3{
+            position: absolute;
+            width: 20%;
+            height: 30%;
+            background-color: #227C9D;
+            border-radius: 100%;
+            z-index: 98;
+            margin-left: -30%;
+            margin-top: -15%;
+            
+        }
+
+    .textos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #CDE5A5;
+        width: 50%;
+        height: 70%;
+        z-index: 99;
+        position: absolute;
+        border-radius: 12px;
+        right: 0;
+        margin-right: 10px;
+
+        h1{
+            font-size: 60px;
+            color: #447604;
+        }
+
+        .input{
+            display: flex;
+            flex-direction: column;
+        
+
+        label{
+            font-size: 25px;
+            color: #447604;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        input{
+            width: 500px;
+            height: 50px;
+            border-radius: 12px;
+            border: none;
+        }
+        }
+
+        button{
+            background-color: #C44536;
+            color: #ffffff;
+            width: 200px;
+            height: 60px;
+            margin-top: 10%;
+            border-radius: 12px;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+    }
+
+}
