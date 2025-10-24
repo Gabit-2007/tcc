@@ -12,8 +12,9 @@
     justify-content: space-around;
     align-items: center;
     margin: 0;
+    bottom: 0;
+    padding: 0;
     margin-top: 20px;
-    padding: 20px;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -22,7 +23,7 @@
     
         .imagem{
             z-index: 100;
-            width: 35%;
+            width: 47.15%;
             position: relative;
             margin-left: -35%;
             margin-bottom: -5%;
@@ -31,37 +32,37 @@
 
         .bola1{
             position: absolute;
-            width: 30%;
+            width: 35%;
             height: 60%;
             background-color: #C44536;
             border-radius: 100%;
             z-index: 98;
-            margin-left: -100%;
+            margin-left: -90%;
             margin-top: -10%;
             
         }
 
         .bola2{
             position: absolute;
-            width: 9%;
+            width: 12%;
             height: 20%;
             background-color: #447604;
             border-radius: 100%;
             z-index: 98;
-            margin-left: -50%;
-            margin-top: -35%;
+            margin-left: -40%;
+            margin-top: -48%;
             
         }
 
         .bola3{
             position: absolute;
-            width: 20%;
+            width: 30%;
             height: 45%;
             background-color: #FFBF00;
             border-radius: 100%;
             z-index: 98;
             margin-left: -60%;
-            margin-top: 35%;
+            margin-top: 55%;
             
         }
 
@@ -73,7 +74,7 @@
         background-color: #CAE6F0;
         width: 50%;
         height: 90%;
-        z-index: 100;
+        z-index: 99;
         position: absolute;
         border-radius: 12px;
         right: 0;
