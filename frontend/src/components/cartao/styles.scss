@@ -1,11 +1,35 @@
-// .cartão{
-//     border-radius: 12;
-//     width: 300px;
-//     position: relative;
-//     height: 200px;
-//     border: 0;
+.cartao{
+    border-radius: 12;
+    width: 40%;
+    position: relative;
+    height: 300px;
+    border: 0;
+    z-index: 99;
+    overflow: hidden;
 
-//     .info{
-//         z-index: 100;
-//     }
-// }
+    img{
+        z-index: 98;
+        position: absolute;
+        height: 90%;
+    }
+
+    span{
+        height: 90%;
+        width: 86.5%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 99;
+        border-radius: 12px;
+        position: absolute;
+    }
+
+    .info{
+        z-index: 100;
+        position: absolute;
+    }
+
+    h3{
+        font-size: 40px;
+        color: white;
+        
+    }
+}

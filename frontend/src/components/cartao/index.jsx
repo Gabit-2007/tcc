@@ -7,6 +7,7 @@ export default function Cartao({ item }){
         <div className="cartao">
             <Link to={item.link}><button>
             <img src={item.imagem} height={300}/>
+            <span></span>
             <div className="info">
                 <h3>{item.nome}</h3>
                 <p>{item.categoria}</p>
