@@ -133,8 +133,8 @@
                 align-self: center;
                 margin-top: 2%;
                 transform: transition;
-                transition: width 5s height 5s;
-                transition-duration: 2s;
+                transition: width 3s height 3s;
+                transition-duration: 1s;
                 transition-timing-function: ease-in;
                 position: relative;
                 text-align: center;
@@ -187,6 +187,7 @@
 
             
         }
+    
     }
     .verde{
         background-color: #CAE6F0;
@@ -194,6 +195,9 @@
     .azul{
         margin-top: 40px;
         background-color: #227C9D;
+    }
+    .vermelho{
+                    background-color: #C44536;
     }
             
 }
