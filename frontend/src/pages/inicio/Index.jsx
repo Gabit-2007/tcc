@@ -38,9 +38,9 @@ export default function Inicio(){
         <img src={Asfalto} className="asfalto"/>
         <div className="login">
             <div className="texto3">
-            <h1>Faça login</h1>
-            <p>se inscreva e receba notícias sobre eventos, shows e exposições em primeira mão</p>
-            <Link to={"/login"}><button>Login</button></Link>
+            <h1>Seja CultLover</h1>
+            <p>Assine nosso programa de descontos e receba notícias sobre eventos, shows e exposições em primeira mão, além de decontos exclusivos!</p>
+            <Link to={"/login"}><button>Assinar</button></Link>
             </div>
             <div className="imagem">
             <img src={Luz} className="tras" />
