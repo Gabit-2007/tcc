@@ -1,8 +1,8 @@
 .cartao{
-    border-radius: 12;
-    width: 40%;
+    border-radius: 12px;
+    width: 45%;
     position: relative;
-    height: 300px;
+    height: 25vw;
     border: 0;
     z-index: 99;
     overflow: hidden;
@@ -10,26 +10,39 @@
     img{
         z-index: 98;
         position: absolute;
-        height: 90%;
+        height: 95%;
+        border-radius: 12px;
     }
 
     span{
-        height: 90%;
-        width: 86.5%;
+        height: 95%;
+        width: 87%;
         background-color: rgba(0, 0, 0, 0.2);
         z-index: 99;
         border-radius: 12px;
         position: absolute;
+        
     }
 
     .info{
+        display: flex;
+        flex-direction: column;
         z-index: 100;
+        width: 90%;
+        height: 100%;
         position: absolute;
+        justify-content: center;
+        align-content: center;
+        
+        
     }
 
     h3{
-        font-size: 40px;
+        font-size: 50px;
         color: white;
+        text-align: center;
+        font-weight: 700;
+        padding: 150px;
         
     }
 }
