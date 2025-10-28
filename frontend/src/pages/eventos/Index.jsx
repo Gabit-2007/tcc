@@ -70,11 +70,11 @@ export default function Eventos(){
         <div className="eventos">
             <Cabecalho></Cabecalho>
             <div className="categoria"> 
-                <img src={Cidade} />
+                <img className="cidade" src={Cidade} />
             
                   <div className="filtros">
         <div className="filtro">
-          <label>Categoria:</label>
+          <label className="c">Categoria</label>
           <select value={categoria} onChange={(e) => setCategoria(e.target.value)}>
             {categorias.map((c) => (
               <option key={c}>{c}</option>
@@ -83,7 +83,7 @@ export default function Eventos(){
         </div>
 
         <div className="filtro">
-          <label>Preço:</label>
+          <label className="a">Preço</label>
           <select value={preco} onChange={(e) => setPreco(e.target.value)}>
             {precos.map((p) => (
               <option key={p}>{p}</option>
@@ -92,7 +92,7 @@ export default function Eventos(){
         </div>
 
         <div className="filtro">
-          <label>Região:</label>
+          <label className="b">Região</label>
           <select value={regiao} onChange={(e) => setRegiao(e.target.value)}>
             {regioes.map((a) => (
               <option key={a}>{a}</option>

@@ -8,10 +8,10 @@ export default function Cabecalho(){
             <img src={ Logo } alt="RotaCult" />
 
             <div className="rotas">
-                <Link to={"/"}>inicio</Link>
-                <Link to={"/eventos"}>eventos</Link>
-                <Link to={"/sobre"}>sobre</Link>
-                <Link to={"/login"}>login</Link>
+                <Link className="a" to={"/"}>inicio</Link>
+                <Link className="b" to={"/eventos"}>eventos</Link>
+                <Link className="c" to={"/sobre"}>sobre</Link>
+                <Link className="d" to={"/login"}>login</Link>
             </div>
         </div>
     );
