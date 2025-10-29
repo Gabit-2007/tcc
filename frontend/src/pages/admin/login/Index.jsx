@@ -7,7 +7,7 @@ export default function LoginAdm(){
     return(
         <div>
             <Cabecalho></Cabecalho>
-        <div className="login">
+        <div className="loginAdm">
             
                 <span className="bola1"></span>
                 <span className="bola2"></span>
