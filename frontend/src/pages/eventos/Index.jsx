@@ -20,7 +20,7 @@ import MuseuFav from "../../assets/favelas.png";
 import MuIndig from "../../assets/cultind.png";
 import MImigracao from "../../assets/mimigracao.png";
 import CCBB from "../../assets/ccbb.png";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.scss";
 
 
@@ -71,6 +71,11 @@ export default function Eventos(){
             <Cabecalho></Cabecalho>
             <div className="categoria"> 
                 <img className="cidade" src={Cidade} />
+        
+        <div className="header">
+         <h1>encontre o lugar perfeito para você</h1>
+        <p>explore nossas opções</p>
+        </div>
             
                   <div className="filtros">
         <div className="filtro">

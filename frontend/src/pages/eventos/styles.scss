@@ -1,5 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .eventos{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+    .header{
+        h1{
+        color: #447604;
+        font-weight: 600;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 2%;
+    }
+    }
+
+
     .cidade{
         width: 100%;
         display: flex;
@@ -17,7 +47,7 @@
 
             label{
                 font-size: 30px;
-                font-weight: 700;
+                font-weight: 600;
 
             }
             .c{
@@ -50,7 +80,12 @@
     .lista-cartoes{
         display: flex;
         flex-direction: row;
+        gap: 5px;
+        width: 100%;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5px;
     }
+
 }

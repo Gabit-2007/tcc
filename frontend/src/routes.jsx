@@ -5,6 +5,7 @@ import Eventos from "./pages/eventos";
 import Login from "./pages/login";
 import Cadastro from "./pages/cadastro";
 import Sobre from "./pages/sobre/Index";
+import LoginAdm from "./pages/admin/login";
 
 export default function Navegacao(){
     return(
@@ -15,6 +16,7 @@ export default function Navegacao(){
     <Route path= "/login" element= {<Login/>} />
     <Route path= "/sobre" element= {<Sobre/>} />
     <Route path= "/cadastro" element= {<Cadastro/>} />
+    <Route path="/adminlogin" element={<LoginAdm/>}/>
 
     </Routes>
     </BrowserRouter>);
