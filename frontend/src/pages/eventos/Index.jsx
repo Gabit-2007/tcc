@@ -12,11 +12,11 @@ export default function Eventos(){
     const[item, setItem] = useState([]);
 
   function verDetalhes( item ){
-    Navigate("/detalhe", {state: { item }});
+    Navigate("/detalhe", { state: { item: item }});
   }
 
   async function listarLugares() {
-    const response = await api.get('/lugares')
+    const response = await api.get("/lugares")
     setItem(response.data)
  }
 
@@ -39,10 +39,15 @@ export default function Eventos(){
       </div>
 
       <div className="lista-cartoes">
-        {item.map((item) => 
-          <a onClick={() => verDetalhes(item)}>
-            <Cartao item={item} /> </a>)
-       }
+        {item.map((item) =>( 
+        <div
+          key={item.id}
+           onClick={() => verDetalhes(item)}
+           >
+            <Cartao 
+            imagem={item.imagem} />
+            </div>
+          ))}
       </div>
             <Rodape></Rodape>
         </div>
