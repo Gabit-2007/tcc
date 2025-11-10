@@ -1,9 +1,39 @@
 import Cabecalho from "../../../components/cabecalho";
-import { Link } from "react-router";
+import { useNavigate } from "react-router";
+import { useState, useEffect } from "react";
+import api from "../../../api.js"
 import Trabalho from "../../../assets/trabalho.jpg";
 import "./styles.scss"
 
 export default function LoginAdm(){
+
+    const [usuario, setUsuario] = useState("");
+    const [senha, setSenha] = useState("");
+
+    const navigate = useNavigate();
+
+
+    async function entrar() {
+        try {
+            const body = {
+                "usuario": usuario,
+                "senha": senha
+            }
+
+            const response = await api.post('/login', body);
+            const token = response.data.token;
+            const nomeUsuario = response.data.usuario.usuario;
+
+            localStorage.setItem("USUARIO", nomeUsuario)
+            localStorage.setItem("TOKEN", token)
+            
+            navigate('/editar')
+        } catch (error) {
+            alert(error)
+        }
+    }
+
+
     return(
         <div>
             <Cabecalho></Cabecalho>
@@ -18,16 +48,20 @@ export default function LoginAdm(){
                 <h1>Login Administrativo</h1>
 
                 <div className="input">
-                <label>email</label>
-                <input type="text" />
+                <input 
+                    placeholder="Usuário" 
+                    value={usuario} 
+                    onChange={(e) => setUsuario(e.target.value)} />
                 </div>
 
                 <div className="input">
-                <label>senha</label>
-                <input type="text" />
+                <input 
+                    placeholder="Senha" 
+                    value={senha} 
+                    onChange={(e) => setSenha(e.target.value)} />
                 </div>
 
-                <Link to={"/"}><button>Entrar</button></Link>
+                <button onClick={entrar}>Entrar</button>
 
             </div>
         </div>

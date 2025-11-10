@@ -1,91 +1,29 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.eventos{
+.cidade{
     width: 100%;
+}
+
+h1{
+    text-align: center;
+    color: #447604;
+    font-size: 200%;
+}
+
+p{
+    text-align: center;
+    font-size: 140%;
+}
+
+.lista-cartoes{
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-
-    .header{
-        h1{
-        color: #447604;
-        font-weight: 600;
-        font-size: 50px;
-        text-align: center;
-    }
-
-    p{
-        text-align: center;
-        font-size: 30px;
-        font-weight: 400;
-        margin-bottom: 2%;
-    }
-    }
-
-
-    .cidade{
-        width: 100%;
-        display: flex;
-    }
-
-    .filtros{
-        display: flex;
-        justify-content: space-around;
-
-        .filtro{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            label{
-                font-size: 30px;
-                font-weight: 600;
-
-            }
-            .c{
-                color: #227C9D;
-            }
-
-            .a{
-                color: #FFBF00;
-            }
-
-            .b{
-                color: #C44536;
-            }
-            select{
-                width: 18vw;
-                height: 3vw;
-                text-align: center;
-                font-size: 20px;
-                box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-                border: 0;
-                margin-top: 10px;
-                border-radius: 10px;
-            }
-            select:hover{
-                background-color: rgb(189, 189, 189);
-            }
-        }
-    }
-
-    .lista-cartoes{
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 5px;
-    }
-
 }

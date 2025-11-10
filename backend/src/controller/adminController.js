@@ -20,6 +20,13 @@ export function login(req, res) {
         }
 
         let token = jwt.sign({ id: admin.id, usuario: admin.usuario }, secret, { expiresIn: '1h' });
-        res.json({ message: 'Login bem-sucedido', token });
+        res.json({
+    message: 'Login bem-sucedido',
+    token,
+    usuario: {
+        usuario: admin.usuario
+    }
+});
+
     });
 }

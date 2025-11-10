@@ -5,7 +5,7 @@ import "./styles.scss";
 export default function Cabecalho(){
     return(
         <div className="cabecalho">
-            <Link to={"adminlogin"}><img src={ Logo } alt="RotaCult" /></Link>
+            <Link to={"/adminlogin"}><img src={ Logo } alt="RotaCult" /></Link>
 
             <div className="rotas">
                 <Link className="a" to={"/"}>inicio</Link>

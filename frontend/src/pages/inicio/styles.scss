@@ -9,6 +9,7 @@
         overflow-x: hidden;
         width: 100%;
         position: relative;
+        
 
     .azul{
         background-image: linear-gradient(to bottom, #CAE6F0, #227C9D);
@@ -266,11 +267,20 @@
         overflow: hidden;
         margin-top: 60px;
 
-        img{
-            height: 500px;
+        .bolas{
+            justify-content: center;
+            width: 50%;
+            overflow: hidden;
+            position: relative;
+
+            img{
+            height: 40vw;
             z-index: 100;
+            }
+
             
         }
+
 
         .texto3{
             display: flex;
@@ -303,25 +313,6 @@
             cursor: pointer;
             }
         
-        .bola1{
-            position: absolute;
-            width: 550px;
-            height: 550px;
-            background-color: #447604;
-            border-radius: 100%;
-            z-index: 99;
-            margin-left: -91%;
-        }
-        .bola2{
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background-color: #D95D39;
-            border-radius: 100%;
-            z-index: 101;
-            margin-left: -1500px;
-            margin-top: -400px;
-        }
     }
     }
     

@@ -3,6 +3,8 @@ import "./styles.scss";
 
 
 export default function Cartao({ item }){
+    console.log("Renderizando cartão:", item);
+    
     return(
         <div className="cartao">
             <img src={item.imagem} />

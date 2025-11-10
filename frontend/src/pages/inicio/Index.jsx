@@ -17,7 +17,7 @@ export default function Inicio(){
         <div className="azul">
             <h1>VENHA CONHECER SP!</h1>
             <div className="sla">
-                <p>roles acessíveis pra conhecer com a galera ou sozinho!</p>
+                <p>Passeios acessíveis para conhecer com a galera ou sozinho!</p>
                 <img src={ Masp } />
             </div>
         </div>
@@ -29,7 +29,7 @@ export default function Inicio(){
             <span className="bola1"></span>
             <span className="bola2"></span>
             <div className="texto2">
-            <h2>se voce curte conhecer lugares novos e explorar a cidade de SP,
+            <h2>Se você gosta de conhecer lugares novos e explorar a cidade de SP,
             o RotaCult é o guia certo!</h2>
             <p>pesquise por categoria, valor ou região</p>
             <Link to={"/eventos"}><button>acesse nossa página de eventos</button></Link>
@@ -39,7 +39,7 @@ export default function Inicio(){
         <div className="login">
             <div className="texto3">
             <h1>Seja CultLover</h1>
-            <p>Assine nosso programa de descontos e receba notícias sobre eventos, shows e exposições em primeira mão, além de decontos exclusivos!</p>
+            <p>Faça login e comente sobre os locais do nosso catálogo!</p>
             <Link to={"/login"}><button>Assinar</button></Link>
             </div>
             <div className="imagem">
@@ -53,13 +53,15 @@ export default function Inicio(){
         <div className="listras">
         </div>
         <div className="sobre">
+            <div className="bolas">
             <img src={SP} />
-            <div className="texto3">
-            <h1>Saiba mais sobre nós</h1>
-            <p>gostou da nossa ação? <br />
-            clique em saiba mais e conheça nossa história! </p>
             <span className="bola1"></span>
             <span className="bola2"></span>
+            </div>
+            <div className="texto3">
+            <h1>Saiba mais sobre nós</h1>
+            <p>Gostou da nossa ação? <br />
+            clique em saiba mais e conheça nossa história! </p>
             <Link to={"/sobre"}><button>saiba mais</button></Link>
             </div>
         </div>
