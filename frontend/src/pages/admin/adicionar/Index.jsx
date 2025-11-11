@@ -57,7 +57,7 @@ export default function AdicionarRota(){
     }
 
     return(
-        <div>
+        <div className="main">
             <h1>Adicionar</h1>
 
             <div className="input">

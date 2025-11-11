@@ -61,6 +61,8 @@ export default function Editar(){
             </div>)}
 
             <Link to={"/add"} className="add"><button>Adicionar</button></Link>
+            <button onClick={sair} className="sair">Sair</button>
+
         </div>
     )
 }
