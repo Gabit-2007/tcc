@@ -52,13 +52,15 @@ export default function Editar(){
         <div>
             <h1>Area administrativa</h1>
 
-            {evento.map((evento) => <div>
+            {evento.map((evento) => <div className="linha">
                 <h3>{evento.nome}</h3>
-                <button onClick={() => verMudar(evento)}>Alterar</button>
-                <button onClick={() => deletarLugares(evento.id)}>Deletar</button>
+                <div>
+                <button onClick={() => verMudar(evento)} className="alt">Alterar</button>
+                <button onClick={() => deletarLugares(evento.id)} className="del">Deletar</button>
+                </div>
             </div>)}
 
-            <Link to={"/add"}><button>Adicionar</button></Link>
+            <Link to={"/add"} className="add"><button>Adicionar</button></Link>
         </div>
     )
 }
