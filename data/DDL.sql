@@ -1,7 +1,6 @@
-
-create database rotacult;
-
-
+drop table if exists rotacult;
+create table rotacult;
+use rotacult;
 
  create table lugares( 
 id int primary key auto_increment,
@@ -33,10 +32,11 @@ create table usuario(
 
 create table comentario(
  id_comentario int primary key auto_increment,
-nome varchar(100),
+email varchar(200),
 comentario varchar(1000),
 id_lugar int,
-foreign key (id_lugar) references usuario(id)
+foreign key (id_lugar) references lugares(id),
+foreign key (email) references usuario(email)
  );
 
 

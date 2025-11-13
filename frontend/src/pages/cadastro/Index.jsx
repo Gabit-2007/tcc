@@ -1,10 +1,34 @@
 import Cabecalho from "../../components/cabecalho";
-import { Link } from "react-router";
+import { useNavigate } from "react-router";
+import { useState } from "react";
+import api from "../../api.js"
 import Diana from "../../assets/estatua.png";
 import "./styles.scss"
 
 
 export default function Cadastro(){
+    const [nome, setNome] = useState("");
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+
+    const navigate = useNavigate();
+
+    async function criarUser() {
+        try{
+            const body = {
+                "nome": nome,
+                "email": email,
+                "senha": senha
+            }
+
+            const response = await api.post('/user', body);
+            navigate('/login')
+        } catch(error) {
+            alert(error)
+        }
+    }
+
+
     return(
         <div>
             <Cabecalho></Cabecalho>
@@ -19,21 +43,27 @@ export default function Cadastro(){
                 <h1>Cadastre-se</h1>
 
                 <div className="input">
+                <label>nome</label>
+                <input 
+                value={nome}
+                onChange={(e) => setNome(e.target.value)} />
+                </div>
+
+                <div className="input">
                 <label>email</label>
-                <input type="text" />
+                <input 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)} />
                 </div>
 
                 <div className="input">
                 <label>senha</label>
-                <input type="text" />
+                <input 
+                value={senha}
+                onChange={(e) => setSenha(e.target.value)} />
                 </div>
 
-                <div className="input">
-                <label>confirmar senha</label>
-                <input type="text" />
-                </div>
-
-                <Link to={"/"}><button>Entrar</button></Link>
+                <button onClick={criarUser}>Entrar</button>
 
                 </div>
         </div>

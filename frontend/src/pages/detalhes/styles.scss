@@ -45,5 +45,61 @@
             font-size: 150%;
             border: none;
         }
+
+        .coment{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+
+        h2{
+            font-weight: 600;
+            color: #227C9D;
+        }
+
+        textarea{
+            width: 100%;
+            min-height: 40px;
+            max-height: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            resize:none; 
+            overflow: hidden;
+            font-size: 1rem;
+            line-height: 1.4;
+            transition: all 0.2s ease;
+        }
+
+        button{
+            width: 40%;
+            align-self: center;
+            background-color: #C44536;
+        }
     }
+    }
+
+    .listarComen{
+        display: flex;
+        flex-direction: column;
+        border: #ccc solid 1px;
+        border-radius: 12px;
+        width: 100%;
+        padding: 5px;
+        margin-top: 15px;
+
+        h3{
+            font-weight: 600;
+            font-size: 150%;
+            color: #447604;
+            text-align: left;
+        }
+
+        p{
+            font-size: 140%;
+            margin: 5px;
+            padding: 0px 5px;
+            text-align: left;
+        }
+    }
+    
 }

@@ -15,4 +15,6 @@ connection.connect((error) => {
     }
 });
 
+export const JWT_SECRET = "rotacult_secret_key";
+
 export default connection;

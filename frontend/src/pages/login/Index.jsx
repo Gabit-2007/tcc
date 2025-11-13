@@ -1,9 +1,35 @@
 import Cabecalho from "../../components/cabecalho";
-import { Link } from "react-router";
+import { useNavigate, Link } from "react-router";
+import { useState } from "react";
+import api from "../../api.js"
 import MarcoZ from "../../assets/marcozero.png";
 import "./styles.scss"
 
 export default function Login(){
+
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+
+    const navigate = useNavigate();
+
+    async function login() {
+        try{
+            const body = {
+                "email": email,
+                "senha": senha
+            }
+
+            const response = await api.post('/userlogin', body);
+            const token = response.data.token;
+
+            localStorage.setItem("TOKEN", token)
+
+            navigate('/eventos')
+        } catch(error) {
+            alert(error)
+        }
+    }
+
     return(
         <div>
             <Cabecalho></Cabecalho>
@@ -20,15 +46,19 @@ export default function Login(){
 
                 <div className="input">
                 <label>email</label>
-                <input type="text" />
+                <input 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)} />
                 </div>
 
                 <div className="input">
                 <label>senha</label>
-                <input type="text" />
+                <input 
+                value={senha}
+                onChange={(e) => setSenha(e.target.value)} />
                 </div>
 
-                <Link to={"/"}><button>Entrar</button></Link>
+                <button onClick={login}>Entrar</button>
 
                 <p>Ainda não tem conta?</p>
                 <Link to={"/cadastro"}>Cadastre-se agora</Link>
