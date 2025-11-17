@@ -44,7 +44,8 @@ export function loginUsuario(req, res) {
 
         res.status(200).json({
             message: "Login realizado com sucesso",
-            token
+            token,
+            nome: usuario.nome
         });
     });
 }

@@ -24,8 +24,11 @@ export default function Login(){
 
             const response = await api.post('/userlogin', body);
             const token = response.data.token;
+            const nomeUsuario = response.data.nome;
 
-            localStorage.setItem("TOKEN", token)
+            localStorage.setItem("TOKEN", token);
+            localStorage.setItem("NOME_USUARIO", nomeUsuario);
+
 
             navigate('/eventos')
         } catch(error) {

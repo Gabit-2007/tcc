@@ -10,7 +10,7 @@ export default function Rodape(){
             <img src={ Logo } alt="rotaCult" />
 
             <div className="contato">
-                <h1>NOS CONTATE</h1>
+                <h1>ENTRE EM CONTATO</h1>
                 <p>(11) 91234-5678</p>
                 <p>RotaCult@gmail.com</p>
 
