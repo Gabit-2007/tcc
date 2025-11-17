@@ -1,6 +1,7 @@
 import Cabecalho from "../../components/cabecalho";
 import { useNavigate, Link } from "react-router";
 import { useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import api from "../../api.js"
 import MarcoZ from "../../assets/marcozero.png";
 import "./styles.scss"
@@ -9,6 +10,8 @@ export default function Login(){
 
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
+    const [mostrarSenha, setMostrarSenha] = useState(false);
+
 
     const navigate = useNavigate();
 
@@ -45,18 +48,23 @@ export default function Login(){
                 <h2>Bem vindo de volta</h2>
 
                 <div className="input">
-                <label>email</label>
                 <input 
+                placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)} />
                 </div>
 
                 <div className="input">
-                <label>senha</label>
-                <input 
+                <input
+                placeholder="Senha"
                 value={senha}
-                onChange={(e) => setSenha(e.target.value)} />
+                onChange={(e) => setSenha(e.target.value)}
+                type={mostrarSenha ? "text" : "password"} />
+                <span className="icon" onClick={() => setMostrarSenha(!mostrarSenha)}>
+                {mostrarSenha ? <FaEyeSlash /> : <FaEye />}
+                </span>
                 </div>
+
 
                 <button onClick={login}>Entrar</button>
 

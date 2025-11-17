@@ -1,5 +1,6 @@
 import Cabecalho from "../../components/cabecalho";
 import { useNavigate } from "react-router";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useState } from "react";
 import api from "../../api.js"
 import Diana from "../../assets/estatua.png";
@@ -10,6 +11,8 @@ export default function Cadastro(){
     const [nome, setNome] = useState("");
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
+    const [mostrarSenha, setMostrarSenha] = useState(false);
+
 
     const navigate = useNavigate();
 
@@ -43,24 +46,28 @@ export default function Cadastro(){
                 <h1>Cadastre-se</h1>
 
                 <div className="input">
-                <label>nome</label>
                 <input 
+                placeholder="Nome"
                 value={nome}
                 onChange={(e) => setNome(e.target.value)} />
                 </div>
 
                 <div className="input">
-                <label>email</label>
                 <input 
+                placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)} />
                 </div>
 
                 <div className="input">
-                <label>senha</label>
-                <input 
+                <input
+                placeholder="Senha"
                 value={senha}
-                onChange={(e) => setSenha(e.target.value)} />
+                onChange={(e) => setSenha(e.target.value)}
+                type={mostrarSenha ? "text" : "password"} />
+                <span className="icon" onClick={() => setMostrarSenha(!mostrarSenha)}>
+                {mostrarSenha ? <FaEyeSlash /> : <FaEye />}
+                </span>
                 </div>
 
                 <button onClick={criarUser}>Entrar</button>

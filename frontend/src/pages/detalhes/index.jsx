@@ -92,7 +92,7 @@ export default function DetalhesPage() {
             {coment.length > 0 ? (
               coment.map((c, i) => (
                 <div className="coments" key={i}>
-                  <h3>{c.email}</h3>
+                  <h3>{c.nome_usuario}</h3>
                   <p>{c.comentario}</p>
                 </div>
               ))

@@ -1,6 +1,7 @@
 import Cabecalho from "../../../components/cabecalho";
 import { useNavigate } from "react-router";
 import { useState, useEffect } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import api from "../../../api.js"
 import Trabalho from "../../../assets/trabalho.jpg";
 import "./styles.scss"
@@ -9,6 +10,8 @@ export default function LoginAdm(){
 
     const [usuario, setUsuario] = useState("");
     const [senha, setSenha] = useState("");
+    const [mostrarSenha, setMostrarSenha] = useState(false);
+
 
     const navigate = useNavigate();
 
@@ -55,11 +58,15 @@ export default function LoginAdm(){
                 </div>
 
                 <div className="input">
-                <input 
-                    placeholder="Senha" 
-                    value={senha} 
-                    onChange={(e) => setSenha(e.target.value)} />
-                </div>
+                                <input
+                                placeholder="Senha"
+                                value={senha}
+                                onChange={(e) => setSenha(e.target.value)}
+                                type={mostrarSenha ? "text" : "password"} />
+                                <span className="icon" onClick={() => setMostrarSenha(!mostrarSenha)}>
+                                {mostrarSenha ? <FaEyeSlash /> : <FaEye />}
+                                </span>
+                                </div>
 
                 <button onClick={entrar}>Entrar</button>
 

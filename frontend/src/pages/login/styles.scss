@@ -89,14 +89,10 @@
         .input{
             display: flex;
             flex-direction: column;
+            width: fit-content;
         
 
-        label{
-            font-size: 25px;
-            color: #227C9D;
-            font-weight: 500;
-            text-align: left;
-        }
+        
 
         input{
             width: 40vw;
@@ -105,6 +101,12 @@
             border: none;
             font-size: 150%;
             padding: 5px;
+            margin: 5px;
+        }
+
+        .icon{
+            justify-self: end;
+            align-self: flex-end;
         }
         }
 

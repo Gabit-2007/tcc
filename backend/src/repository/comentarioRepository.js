@@ -8,6 +8,6 @@ export function createComentario(comentario, callback) {
 }
 
 export function getComentariosByLugar(id_lugar, callback) {
-    let sql = 'select id_comentario, email, comentario from comentario where id_lugar = ?';
+    let sql = 'SELECT c.id_comentario, u.nome AS nome_usuario, c.comentario FROM comentario c JOIN usuario u ON c.email = u.email WHERE c.id_lugar = ?';
     connection.query(sql, [id_lugar], callback);
 }
