@@ -21,11 +21,12 @@ export default function DetalhesPage() {
   }
 
   async function adicionarComentario() {
-    const nomeUsuario = localStorage.getItem("USUARIO");
+    const nomeUsuario = localStorage.getItem("NOME_USUARIO");
     const token = localStorage.getItem("TOKEN");
 
     if (!token || !nomeUsuario) {
-      navigate("/");
+      alert("Você não está logado. Faça login para comentar");
+      navigate("/login")
       return;
     }
 
