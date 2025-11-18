@@ -25,7 +25,7 @@ export default function DetalhesPage() {
     const token = localStorage.getItem("TOKEN");
 
     if (!token || !nomeUsuario) {
-      alert("Você não está logado. Faça login para comentar");
+      alert("Você não está logado. Faça login para comentar!");
       navigate("/login")
       return;
     }
